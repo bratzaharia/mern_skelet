@@ -8,12 +8,12 @@ import helmet from "helmet";
 import Template from "./../template";
 import userRoutes from "./routes/user.routes";
 import authRoutes from "./routes/auth.routes";
-// import devBundle from './devBundle';
+import devBundle from './devBundle';
 
 
 // express APP
 const app = express();
-// devBundle.compile(app);
+devBundle.compile(app);
 
 // // DB Config
 // const db = require('./../config/config').mongoURI;
